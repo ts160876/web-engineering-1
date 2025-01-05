@@ -1,8 +1,9 @@
 <?php
 $text = "You have not told me your name. You can do this via query parameters.";
-$name = htmlspecialchars($_GET["name"]);
-if ($name != "") {
-  $text = "You have told me your name: " . $name;
+$first_name = htmlspecialchars($_GET["first_name"]);
+$last_name = htmlspecialchars($_GET["last_name"]);
+if ($first_name != "" or $last_name != "") {
+  $text = "You have told me your name: " . $first_name . " " .$last_name;
 }
 ?>
 <!DOCTYPE html>
