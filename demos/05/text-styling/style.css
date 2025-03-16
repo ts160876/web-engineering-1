@@ -1,0 +1,16 @@
+p {
+  color: black;
+  background-color: white;
+
+  font-family: Arial;
+  font-size: 1em;
+  font-weight: normal;
+  font-style: normal;
+
+  line-height: 1em;
+
+  text-decoration: none;
+  text-transform: none;
+  text-align: left;
+  text-shadow: none;
+}

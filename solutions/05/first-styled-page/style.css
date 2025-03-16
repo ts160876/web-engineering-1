@@ -1,0 +1,35 @@
+body {
+  font-family: Arial;
+}
+
+h2 {
+  border-bottom-color: black;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+}
+
+p.main::first-letter {
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.left-floating {
+  float: left;
+  border: solid 1px black;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.right-floating {
+  float: right;
+  border: solid 1px black;
+  margin-left: 16px;
+  margin-bottom: 16px;
+}
+
+.reset-floating {
+  clear: both;
+}

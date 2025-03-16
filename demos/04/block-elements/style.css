@@ -1,0 +1,18 @@
+p {
+  font-size: 4em;
+}
+
+#p1 {
+  background-color: red;
+  color: white;
+}
+
+#p2 {
+  background-color: green;
+  color: black;
+}
+
+#p3 {
+  background-color: blue;
+  color: white;
+}

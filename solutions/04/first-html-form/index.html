@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Register with Buku Buku</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <form action="post.php" method="post">
+      <fieldset>
+        <legend>Personal Data</legend>
+        <p>
+          <label for="first_name">First Name</label>
+          <br />
+          <input
+            type="text"
+            name="first_name"
+            id="first_name"
+            maxlength="20"
+            required
+          />
+        </p>
+        <p>
+          <label for="last_name">Last Name</label>
+          <br />
+          <input
+            type="text"
+            name="last_name"
+            id="last_name"
+            maxlength="20"
+            required
+          />
+        </p>
+        <p>
+          <label for="e-mail">E-Mail</label>
+          <br />
+          <input type="email" name="e-mail" id="e-mail" required />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Credit Card</legend>
+        <p>
+          <label for="credit_card_type">Credit Card Type</label>
+          <br />
+          <select name="credit_card_type" id="credit_card_type" required>
+            <option value="AmEx">AmEx</option>
+            <option value="MasterCard">MasterCard</option>
+            <option value="Visa">Visa</option>
+          </select>
+        </p>
+        <p>
+          <label for="credit_card_number" id="credit_card_number"
+            >Credit Card Number</label
+          >
+          <br />
+          <input
+            type="number"
+            name="credit_card_number"
+            id="credit_card_number"
+            min="1111111111111111"
+            max="9999999999999999"
+            required
+          />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Password</legend>
+        <p>
+          <label for="password">Password</label>
+          <br />
+          <input type="password" name="password" id="password" required />
+        </p>
+        <p>
+          <label for="passwort-repeat">Password (repeat)</label>
+          <br />
+          <input
+            type="password"
+            name="passwort-repeat"
+            id="passwort-repeat"
+            required
+          />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Terms and Conditions</legend>
+        <input type="checkbox" required />
+        <label
+          >I accept the
+          <a href="terms-and-conditions.html" target="_blank"
+            >Terms and Conditions for Buku Buku</a
+          >.</label
+        >
+      </fieldset>
+      <button type="submit">Register with Buku Buku</button>
+    </form>
+  </body>
+</html>

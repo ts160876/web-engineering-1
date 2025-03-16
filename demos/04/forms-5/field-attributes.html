@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Forms - Field Attributes</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <form action="./../responses/post.php" method="post">
+      <fieldset>
+        <legend>Field Attributes</legend>
+        <p>
+          <label for="field1">"Normal" Field</label>
+          <br />
+          <input type="text" name="field1" id="field1" />
+        </p>
+        <p>
+          <label for="field2">Required Field</label>
+          <br />
+          <input type="text" name="field2" id="field2" required />
+        </p>
+        <p>
+          <label for="field3">Readonly Field</label>
+          <br />
+          <input type="text" name="field3" id="field3" readonly />
+        </p>
+        <p>
+          <label for="field4">Disabled Field</label>
+          <br />
+          <input type="text" name="field4" id="field4" disabled />
+        </p>
+        <p>
+          <label for="field5">Field with Value</label>
+          <br />
+          <input type="text" name="field5" id="field5" value="A Value" />
+        </p>
+        <p>
+          <label for="field6">Field with Placeholder</label>
+          <br />
+          <input
+            type="text"
+            name="field6"
+            id="field6"
+            placeholder="A Placeholder"
+          />
+        </p>
+      </fieldset>
+      <button type="submit">Send the Form</button>
+    </form>
+  </body>
+</html>

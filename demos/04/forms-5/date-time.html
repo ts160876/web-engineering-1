@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Forms - Date, Time Fields</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <form action="./../responses/post.php" method="post">
+      <fieldset>
+        <legend>Date, Time Fields</legend>
+        <p>
+          <label for="field1">Date Field</label>
+          <br />
+          <input type="date" name="field1" id="field1" />
+        </p>
+        <p>
+          <label for="field2"
+            >Date Field with <mark><code>max/min/step</code></mark
+            >-attribute</label
+          >
+          <br />
+          <input
+            type="date"
+            name="field2"
+            id="field2"
+            min="2025-04-01"
+            max="2025-04-30"
+            step="5"
+          />
+        </p>
+        <p>
+          <label for="field3">Time Field</label>
+          <br />
+          <input type="time" name="field3" id="field3" />
+        </p>
+        <p>
+          <label for="field4"
+            >Time Field with <mark><code>step</code></mark
+            >-attribute</label
+          >
+          <br />
+          <input type="time" name="field4" id="field4" step="300" />
+        </p>
+        <p>
+          <label for="field5">Date/Time Field</label>
+          <br />
+          <input type="datetime-local" name="field5" id="field5" />
+        </p>
+        <p>
+          <label for="field6">Month Field</label>
+          <br />
+          <input type="month" name="field6" id="field6" />
+        </p>
+        <p>
+          <label for="field7">Week Field</label>
+          <br />
+          <input type="week" name="field7" id="field7" />
+        </p>
+      </fieldset>
+      <button type="submit">Send the Form</button>
+    </form>
+  </body>
+</html>

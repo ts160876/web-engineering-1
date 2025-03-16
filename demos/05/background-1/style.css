@@ -1,0 +1,99 @@
+#box1 {
+  color: black;
+  background-color: yellow;
+  background-clip: content-box;
+  padding: 20px;
+  border: dashed 5px red;
+  margin: 20px;
+  height: 480px;
+}
+
+#box2 {
+  color: black;
+  background-color: yellow;
+  background-clip: padding-box;
+  padding: 20px;
+  border: dashed 5px red;
+  margin: 20px;
+  height: 480px;
+}
+
+#box3 {
+  color: black;
+  background-color: yellow;
+  background-clip: border-box;
+  padding: 20px;
+  border: dashed 5px red;
+  margin: 20px;
+  height: 480px;
+}
+
+#box4 {
+  color: black;
+  background: linear-gradient(to right, yellow, orange, orangered);
+  background-clip: content-box;
+  padding: 20px;
+  border: dashed 5px red;
+  margin: 20px;
+  height: 480px;
+}
+
+#box5 {
+  color: black;
+  background: linear-gradient(to right, yellow, orange, orangered);
+  background-clip: padding-box;
+  padding: 20px;
+  border: dashed 5px red;
+  margin: 20px;
+  height: 480px;
+}
+
+#box6 {
+  color: black;
+  background: linear-gradient(to right, yellow, orange, orangered);
+  background-clip: border-box;
+  padding: 20px;
+  border: dashed 5px red;
+  margin: 20px;
+  height: 480px;
+}
+
+#box6 {
+  color: black;
+  background: linear-gradient(to right, yellow, orange, orangered);
+  background-clip: border-box;
+  padding: 20px;
+  border: dashed 5px red;
+  margin: 20px;
+  height: 480px;
+}
+
+#box7 {
+  color: black;
+  background-image: url(cheetah.jpg);
+  background-clip: content-box;
+  padding: 20px;
+  border: dashed 5px red;
+  margin: 20px;
+  height: 480px;
+}
+
+#box8 {
+  color: black;
+  background-image: url(cheetah.jpg);
+  background-clip: padding-box;
+  padding: 20px;
+  border: dashed 5px red;
+  margin: 20px;
+  height: 480px;
+}
+
+#box9 {
+  color: black;
+  background-image: url(cheetah.jpg);
+  background-clip: border-box;
+  padding: 20px;
+  border: dashed 5px red;
+  margin: 20px;
+  height: 480px;
+}

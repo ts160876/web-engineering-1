@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Selectors</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" id="stylesheet" />
+    <link rel="alternate stylesheet" href="type-selector.css" />
+    <link rel="alternate stylesheet" href="class-selector.css" />
+    <link rel="alternate stylesheet" href="id-selector.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <h1>Selectors</h1>
+    <h2>Multiple paragraphs</h2>
+    <p>
+      This is a <strong class="special">first and special</strong> paragraph
+      which shows how CSS selectors can be used to target HTML elements on a web
+      page. There is a huge variety of CSS selectors available, such as
+      <strong>Type</strong>, <strong>Class</strong> or
+      <strong>ID</strong> selectors, to enable precise styling of HTML. Besides
+      filling the page and adding a
+      <a href="https://google.com">hyperlink without target</a>, this paragraph
+      has no purpose.
+    </p>
+    <p>
+      This is a <strong>second</strong> paragraph which shows how CSS selectors
+      can be used to target HTML elements on a web page. There is a huge variety
+      of CSS selectors available, such as <strong>Type</strong>,
+      <strong>Class</strong> or <strong>ID</strong> selectors, to enable precise
+      styling of HTML. Besides filling the page and adding a
+      <a href="https://google.com" target="_blank">hyperlink to a new window</a
+      >, this paragraph has no purpose.
+    </p>
+    <p>
+      This is a <strong>third</strong> paragraph which shows how CSS selectors
+      can be used to target HTML elements on a web page. There is a huge variety
+      of CSS selectors available, such as <strong>Type</strong>,
+      <strong>Class</strong> or <strong>ID</strong> selectors, to enable precise
+      styling of HTML. Besides filling the page and adding a
+      <a href="https://google.com" target="_self"
+        >hyperlink in the same window</a
+      >, this paragraph has no purpose.
+    </p>
+    <h2>Ordered and Unordered Lists</h2>
+    <p>Ordered list:</p>
+    <ol>
+      <li>Item 1 of ordered list</li>
+      <li class="special">
+        Item 2 of ordered list (this is special, via a class)
+      </li>
+      <li>Item 3 of ordered list</li>
+    </ol>
+    <p>Unordered list:</p>
+    <ul>
+      <li>Item 1 of unordered list</li>
+      <li class="special">
+        Item 2 of unordered list (this is special, via a class)
+      </li>
+      <li>Item 3 of unordered list</li>
+    </ul>
+    <h2>Unordered Lists (partly in DIV tags)</h2>
+    <p>List 1 (no DIV):</p>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
+    <div class="A">
+      <p>List 2 (DIV with class A):</p>
+      <ul>
+        <li>Item 1</li>
+        <li id="unique">Item 2 (this is unique, via an ID)</li>
+      </ul>
+    </div>
+    <div class="B">
+      <p>List 3 (DIV with class B):</p>
+      <ul>
+        <li>Item 1</li>
+        <li>
+          Item 2 with
+          <a href="https://google.com" target="_blank"
+            >hyperlink to a new window</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="A B">
+      <p>List 3 (DIV with class A <strong>and</strong> B):</p>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+      </ul>
+    </div>
+    <h2>A form with different fields</h2>
+    <form>
+      <label for="field1" class="special"
+        >Field 1 (this is special, via a class)</label
+      >
+      <input type="text" id="field1" class="special" />
+      <label for="field2">Field 2 (this is required)</label>
+      <input type="text" id="field2" required />
+      <label for="field3">Field 3 (this is read-only)</label>
+      <input type="text" id="field3" readonly />
+    </form>
+    <br />
+    <form>
+      <select name="selector" id="selector" onchange="changeCSS()">
+        <option value="style.css" selected>Browser Style</option>
+        <option value="style.css">++++Basic Selectors++++</option>
+        <option value="type-selector.css">Type Selector</option>
+        <option value="class-selector.css">Class Selector</option>
+        <option value="class-selector-on-elements.css">
+          Class Selector on Elements
+        </option>
+        <option value="class-selector-multiples.css">
+          Class Selector with multiple Classes
+        </option>
+        <option value="id-selector.css">ID Selector</option>
+        <option value="universal-selector.css">Universal Selector</option>
+        <option value="selector-lists.css">Selector Lists</option>
+        <option value="style.css">++++Attribute Selector++++</option>
+        <option value="attribute-selector.css">Attribute Selector</option>
+        <option value="attribute-selector-with-value.css">
+          Attribute Selector with Value
+        </option>
+        <option value="style.css">++++Pseudo-classes++++</option>
+        <option value="pseudo-class-first-child.css">:first-child</option>
+        <option value="pseudo-class-last-child.css">:last-child</option>
+        <option value="pseudo-class-nth-child.css">:nth-child</option>
+        <option value="pseudo-class-visited.css">:visited</option>
+        <option value="style.css">++++Pseudo-elements++++</option>
+        <option value="pseudo-element-first-line.css">::first-line</option>
+        <option value="pseudo-element-selection.css">::selection</option>
+        <option value="style.css">++++Combinators++++</option>
+        <option value="descendant-combinator.css">Descendant Combinator</option>
+        <option value="child-combinator.css">Child Combinator</option>
+        <option value="next-sibling-combinator.css">
+          Next-Sibling Combinator
+        </option>
+        <option value="subsequent-sibling-combinator.css">
+          Subsequent-Sibling Combinator
+        </option>
+      </select>
+      <a href="style.css" target="_blank" id="hyperlink">style.css</a>
+    </form>
+    <br />
+  </body>
+</html>

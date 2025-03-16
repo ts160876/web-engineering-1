@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Forms - Labels</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <form action="./../responses/post.php" method="post">
+      <p>
+        <label>
+          First Name
+          <input type="text" name="first_name" />
+        </label>
+      </p>
+      <p>
+        <label>
+          Last Name
+          <input type="text" name="last_name" />
+        </label>
+      </p>
+      <p>
+        <label for="street">Street</label>
+        <input type="text" name="street" id="street" />
+      </p>
+      <p>
+        <label for="postal_code">Postal Code</label>
+        <input type="text" name="postal_code" id="postal_code" />
+      </p>
+      <p>
+        City (not a proper label)
+        <input type="text" name="city" id="city" />
+      </p>
+      <button type="submit">Become a Member of Our Zoo</button>
+    </form>
+    <p>
+      The funny thing is: Labels can be placed anywhere on the page. For example
+      <label for="city"><mark>here</mark></label
+      >.
+    </p>
+  </body>
+</html>

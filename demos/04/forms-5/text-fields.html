@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Forms - Text Fields</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <form action="./../responses/post.php" method="post">
+      <fieldset>
+        <legend>Text Fields</legend>
+        <p>
+          <label for="field1">Text Field</label>
+          <br />
+          <input type="text" name="field1" id="field1" />
+        </p>
+        <p>
+          <label for="field2"
+            >Text Field with <mark><code>list</code></mark
+            >-attribute</label
+          >
+          <br />
+          <input type="text" name="field2" id="field2" list="animals" />
+          <datalist id="animals">
+            <option value="Alligator"></option>
+            <option value="Cheetah"></option>
+            <option value="Giraffe"></option>
+            <option value="Hippo"></option>
+            <option value="Monkey"></option>
+          </datalist>
+        </p>
+        <p>
+          <label for="field3"
+            >Text Field with <mark><code>maxlength</code></mark
+            >-attribute</label
+          >
+          <br />
+          <input type="text" name="field3" id="field3" maxlength="10" />
+        </p>
+        <p>
+          <label for="field4"
+            >Text Field with <mark><code>minlength</code></mark
+            >-attribute</label
+          >
+          <br />
+          <input type="text" name="field4" id="field4" minlength="10" />
+        </p>
+        <p>
+          <label for="field5"
+            >Text Field with <mark><code>pattern</code></mark
+            >-attribute (only allowing 3 letters)</label
+          >
+          <br />
+          <input type="text" name="field5" id="field5" pattern="[A-Za-z]{3}" />
+        </p>
+      </fieldset>
+      <button type="submit">Send the Form</button>
+    </form>
+  </body>
+</html>

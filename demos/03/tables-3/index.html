@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Tables 1</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <p>This page shows a table with spanning:</p>
+    <table border="1px solid">
+      <tr>
+        <th scope="col" rowspan="2">Name</th>
+        <th scope="col" rowspan="2">Temporal Range</th>
+        <th scope="col" colspan="5">Classification</th>
+      </tr>
+      <tr>
+        <th scope="col">Domain</th>
+        <th scope="col">Kingdom</th>
+        <th scope="col">Phylum</th>
+        <th scope="col">Class</th>
+        <th scope="col">Order</th>
+      </tr>
+      <tr>
+        <th scope="row">Alligator</th>
+        <td>Late Eocene - Recent</td>
+        <td rowspan="3">Eukaryota</td>
+        <td rowspan="3">Animalia</td>
+        <td rowspan="3">Chordata</td>
+        <td>Reptilia</td>
+        <td>Crocodilia</td>
+      </tr>
+      <tr>
+        <th scope="row">Cheetah</th>
+        <td>Pleistocene - Recent</td>
+        <td rowspan="2">Mammalia</td>
+        <td>Carnivora</td>
+      </tr>
+      <tr>
+        <th scope="row">Monkey</th>
+        <td>Late Eocene - Recent</td>
+        <td>Primates</td>
+      </tr>
+    </table>
+  </body>
+</html>

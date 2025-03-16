@@ -4,7 +4,7 @@ $last_name = htmlspecialchars($_GET["last_name"]);
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
 <head>
   <title>Web Page demonstrating GET and POST requests</title>

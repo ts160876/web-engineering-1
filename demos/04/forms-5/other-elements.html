@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Forms - Other Elemente</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <form action="./../responses/post.php" method="post">
+      <fieldset>
+        <legend>Other Elements</legend>
+        <p>
+          <label for="field1">Range Field</label>
+          <br />
+          <input type="range" name="field1" id="field1" />
+        </p>
+        <p>
+          <label for="field2">Color Field</label>
+          <br />
+          <input type="color" name="field2" id="field2" />
+          <input
+            type="hidden"
+            name="hidden_field"
+            id="field4"
+            value="not displayed on the screen"
+          />
+        </p>
+        <p>
+          <label for="field3">Range Field</label>
+          <br />
+          <textarea name="field3"></textarea>
+        </p>
+      </fieldset>
+      <button type="submit">Send the Form</button>
+    </form>
+  </body>
+</html>

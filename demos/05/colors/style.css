@@ -1,0 +1,10 @@
+p {
+  color: black;
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+
+  text-shadow: 2px 1px 1px red;
+  box-shadow: 10px 5px 5px red;
+  font-size: 4em;
+}

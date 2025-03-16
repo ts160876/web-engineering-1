@@ -1,0 +1,19 @@
+p {
+  color: red;
+}
+
+div > p {
+  color: green;
+}
+
+p.monkey {
+  color: white;
+}
+
+p.monkey[lang="en"] {
+  color: black;
+}
+
+#charly {
+  color: grey;
+}

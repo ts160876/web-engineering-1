@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Forms - Structuring of Forms</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <form action="./../responses/post.php" method="post">
+      <fieldset>
+        <legend>Name</legend>
+        <p>
+          <label>
+            First Name
+            <input type="text" name="first_name" />
+          </label>
+        </p>
+        <p>
+          <label>
+            Last Name
+            <input type="text" name="last_name" />
+          </label>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Address</legend>
+        <p>
+          <label for="street">Street</label>
+          <input type="text" name="street" id="street" />
+        </p>
+        <p>
+          <label for="postal_code">Postal Code</label>
+          <input type="text" name="postal_code" id="postal_code" />
+        </p>
+        <p>
+          <label for="city">City</label>
+          <input type="text" name="city" id="city" />
+        </p>
+      </fieldset>
+      <button type="submit">Become a Member of Our Zoo</button>
+    </form>
+  </body>
+</html>

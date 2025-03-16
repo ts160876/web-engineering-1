@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Forms - GET and POST</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <p>You can enter data in this form:</p>
+    <form action="./../responses/post.php" method="post">
+      <p>
+        <label>
+          First Name
+          <input type="text" name="first_name" />
+        </label>
+      </p>
+      <p>
+        <label>
+          Last Name
+          <input type="text" name="last_name" />
+        </label>
+      </p>
+      <button type="submit">Become a Member of Our Zoo (POST)</button>
+      <button
+        type="submit"
+        formaction="./../responses/get.php"
+        formmethod="get"
+      >
+        Become a Member of Our Zoo (GET)
+      </button>
+      <button type="reset">Reset Form Content</button>
+    </form>
+  </body>
+</html>

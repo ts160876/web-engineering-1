@@ -1,0 +1,9 @@
+#box {
+  font-size: 2em;
+  background-image: url(cheetah.jpg);
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  overflow: auto;
+  height: 533px;
+  width: 800px;
+}

@@ -1,0 +1,15 @@
+li[class="reptilia"] {
+  color: blue;
+}
+
+li[class="mammalia"] {
+  color: red;
+}
+
+li[class="aves"] {
+  color: green;
+}
+
+li:nth-child(odd) {
+  background-color: lightgray;
+}

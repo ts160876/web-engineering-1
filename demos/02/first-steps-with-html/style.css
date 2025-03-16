@@ -1,0 +1,13 @@
+h1,
+h2 {
+  color: blue;
+}
+
+p::first-letter {
+  background-color: yellow;
+}
+
+b {
+  background-color: yellow;
+  color: red;
+}

@@ -4,7 +4,7 @@ $last_name = htmlspecialchars($_POST["last_name"]);
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
 <head>
     <title>Result of POST request</title>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Forms - E-Mail, URL, Password Fields</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <form action="./../responses/post.php" method="post">
+      <fieldset>
+        <legend>E-Mail, URL, Password Fields</legend>
+        <p>
+          <label for="field1">E-Mail Field</label>
+          <br />
+          <input type="email" name="field1" id="field1" />
+        </p>
+        <p>
+          <label for="field2">E-Mail Field (multiple entries)</label>
+          <br />
+          <input type="email" name="field2" id="field2" multiple />
+        </p>
+        <p>
+          <label for="field3">URL Field</label>
+          <br />
+          <input type="url" name="field3" id="field3" />
+        </p>
+        <p>
+          <label for="field4">Password Field</label>
+          <br />
+          <input type="password" name="field4" id="field4" multiple />
+        </p>
+      </fieldset>
+      <button type="submit">Send the Form</button>
+    </form>
+  </body>
+</html>

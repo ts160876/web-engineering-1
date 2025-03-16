@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Forms - Number Fields</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <form action="./../responses/post.php" method="post">
+      <fieldset>
+        <legend>Number Fields</legend>
+        <p>
+          <label for="field1">Number Field</label>
+          <br />
+          <input type="number" name="field1" id="field1" />
+        </p>
+        <p>
+          <label for="field2"
+            >Number Field with <mark><code>list</code></mark
+            >-attribute</label
+          >
+          <br />
+          <input type="number" name="field2" id="field2" list="numbers" />
+          <datalist id="numbers">
+            <option value="100"></option>
+            <option value="150"></option>
+            <option value="200"></option>
+            <option value="250"></option>
+            <option value="300"></option>
+          </datalist>
+        </p>
+        <p>
+          <label for="field3"
+            >Number Field with <mark><code>max</code></mark
+            >-attribute</label
+          >
+          <br />
+          <input type="number" name="field3" id="field3" max="1000" />
+        </p>
+        <p>
+          <label for="field4"
+            >Number Field with <mark><code>min</code></mark
+            >-attribute</label
+          >
+          <br />
+          <input type="number" name="field4" id="field4" min="1000" />
+        </p>
+        <p>
+          <label for="field5"
+            >Number Field with <mark><code>step</code></mark
+            >-attribute (50)</label
+          >
+          <br />
+          <input type="number" name="field5" id="field5" step="50" />
+        </p>
+        <p>
+          <label for="field6"
+            >Number Field with <mark><code>step</code></mark
+            >-attribute (0.01)</label
+          >
+          <br />
+          <input type="number" name="field6" id="field6" step="0.01" />
+        </p>
+      </fieldset>
+      <button type="submit">Send the Form</button>
+    </form>
+  </body>
+</html>

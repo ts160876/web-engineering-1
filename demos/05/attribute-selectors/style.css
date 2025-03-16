@@ -1,0 +1,23 @@
+p[class="alligator"] {
+  color: blue;
+}
+
+p[class~="cheetah"] {
+  color: red;
+}
+
+p[class|="hippo"] {
+  color: green;
+}
+
+p[class^="ka"] {
+  color: yellow;
+}
+
+p[class$="la"] {
+  color: purple;
+}
+
+p[class*="onk"] {
+  color: orange;
+}

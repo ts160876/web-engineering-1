@@ -1,0 +1,8 @@
+p {
+  color: blue;
+  background-color: lightgray;
+}
+
+p.monkey {
+  color: red;
+}

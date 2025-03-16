@@ -1,0 +1,23 @@
+.h1-class {
+  font-size: 2em;
+}
+
+.h2-class {
+  font-size: 1.5em;
+}
+
+.h3-class {
+  font-size: 1.17em;
+}
+
+.h1-class-inverse {
+  font-size: 1.17em;
+}
+
+.h2-class-inverse {
+  font-size: 1.5em;
+}
+
+.h3-class-inverse {
+  font-size: 2em;
+}

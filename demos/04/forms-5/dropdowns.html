@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Forms - Dropdown Boxes</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <form action="./../responses/post.php" method="post">
+      <fieldset>
+        <legend>Animals</legend>
+        <p>
+          <label for="field1">Favorite Animal</label>
+          <br />
+          <select name="favorite_animal" id="field1">
+            <option value="alligator">Alligator</option>
+            <option value="cheetah">Cheetah</option>
+            <option value="giraffe">Giraffe</option>
+            <option value="hippo" selected>Hippo</option>
+            <option value="monkey">Monkey</option>
+          </select>
+        </p>
+        <p>
+          <label for="field2">Cute Animals</label>
+          <br />
+          <select name="cute_animals[]" id="field1" multiple size="5">
+            <option value="alligator">Alligator</option>
+            <option value="cheetah">Cheetah</option>
+            <option value="giraffe">Giraffe</option>
+            <option value="hippo" selected>Hippo</option>
+            <option value="monkey">Monkey</option>
+          </select>
+        </p>
+      </fieldset>
+      <button type="submit">Send the Form</button>
+    </form>
+  </body>
+</html>

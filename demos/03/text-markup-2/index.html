@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Text Markup 2</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <p id="blockquote1" class="markup">This example shows a blockquote:</p>
+    <blockquote cite="https://...">
+      <p id="blockquote2" class="markup">
+        This is a blockquote. Browsers by default will render it as an indented
+        paragraph.
+      </p>
+    </blockquote>
+    <p id="blockquote3" class="code">
+      <code
+        ><script>
+          encodeBlockquote();
+        </script></code
+      >
+    </p>
+
+    <p id="q1" class="markup" hidden>
+      The quote element is
+      <q cite="https://..."
+        >intended for short quotations that don't require paragraph breaks.</q
+      >
+    </p>
+    <p id="q2" class="code" hidden>
+      <code
+        ><script>
+          encodeQ();
+        </script></code
+      >
+    </p>
+
+    <p id="abbr1" class="markup" hidden>
+      We use <abbr>HTML</abbr>, Hypertext Markup Language, to structure our web
+      documents.
+    </p>
+    <p id="abbr2" class="markup" hidden>
+      We use <abbr title="Hypertext Markup Language">HTML</abbr> to structure
+      our web documents.
+    </p>
+    <p id="abbr3" class="code" hidden>
+      <code
+        ><script>
+          encodeAbbr();
+        </script></code
+      >
+    </p>
+
+    <p id="sup1" class="markup" hidden>
+      My birthday is on the 25<sup>th</sup> of May 2001.
+    </p>
+    <p id="sup2" class="code" hidden>
+      <code
+        ><script>
+          encodeSup();
+        </script></code
+      >
+    </p>
+
+    <p id="sub1" class="markup" hidden>
+      Caffeine's chemical formula is
+      C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>.
+    </p>
+    <p id="sub2" class="code" hidden>
+      <code
+        ><script>
+          encodeSub();
+        </script></code
+      >
+    </p>
+
+    <form>
+      <button type="button" onclick="changeToBlockquote()">blockquote</button>
+      <button type="button" onclick="changeToQ()">q</button>
+      <button type="button" onclick="changeToAbbr()">abbr</button>
+      <button type="button" onclick="changeToSup()">sup</button>
+      <button type="button" onclick="changeToSub()">sub</button>
+    </form>
+    <p>
+      All examples from
+      <a href="https://developer.mozilla.org/"
+        >https://developer.mozilla.org/</a
+      >
+    </p>
+  </body>
+</html>

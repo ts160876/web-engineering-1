@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Text Markup 1</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <p id="p1" class="markup">This is a paragraph without any markup.</p>
+    <p id="p2" class="code">
+      <code
+        ><script>
+          encodeP();
+        </script></code
+      >
+    </p>
+
+    <p id="em1" class="markup" hidden>
+      Get out of bed <em>now</em>!<br />Just <em>do</em> it!
+    </p>
+    <p id="em2" class="code" hidden>
+      <code
+        ><script>
+          encodeEm();
+        </script></code
+      >
+    </p>
+
+    <p id="strong1" class="markup" hidden>
+      This liquid is <strong>highly toxic</strong>.
+    </p>
+    <p id="strong2" class="code" hidden>
+      <code
+        ><script>
+          encodeStrong();
+        </script></code
+      >
+    </p>
+
+    <p id="mark1" class="markup" hidden>
+      During the battle,
+      <mark>Rebel spies managed to steal the secret plans</mark> to the Empire's
+      ultimate weapon...
+    </p>
+    <p id="mark2" class="code" hidden>
+      <code
+        ><script>
+          encodeMark();
+        </script></code
+      >
+    </p>
+
+    <p id="i1" class="markup" hidden>
+      The word <i>the</i> is an article.<br />
+      The <i>Queen Mary</i> sailed last night.
+    </p>
+    <p id="i2" class="code" hidden>
+      <code
+        ><script>
+          encodeI();
+        </script></code
+      >
+    </p>
+
+    <p id="b1" class="markup" hidden>
+      This article describes several <b>text-level</b> elements. It explains
+      their usage in an <b>HTML</b> document.
+    </p>
+    <p id="b2" class="code" hidden>
+      <code
+        ><script>
+          encodeB();
+        </script></code
+      >
+    </p>
+
+    <p id="u1" class="markup" hidden>
+      This paragraph includes a <u>wrnogly</u> spelled word.
+    </p>
+    <p id="u2" class="code" hidden>
+      <code
+        ><script>
+          encodeU();
+        </script></code
+      >
+    </p>
+
+    <form>
+      <button type="button" onclick="changeToP()">p</button>
+      <button type="button" onclick="changeToEm()">em</button>
+      <button type="button" onclick="changeToStrong()">strong</button>
+      <button type="button" onclick="changeToMark()">mark</button>
+      <button type="button" onclick="changeToI()">i</button>
+      <button type="button" onclick="changeToB()">b</button>
+      <button type="button" onclick="changeToU()">u</button>
+    </form>
+    <p>
+      All examples from
+      <a href="https://developer.mozilla.org/"
+        >https://developer.mozilla.org/</a
+      >
+    </p>
+  </body>
+</html>

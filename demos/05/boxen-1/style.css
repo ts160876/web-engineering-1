@@ -1,0 +1,35 @@
+.block1 {
+  color: white;
+  background-color: red;
+  padding: 5px;
+  margin: 5px;
+}
+
+.block2 {
+  color: white;
+  background-color: lightcoral;
+  padding: 5px;
+  margin: 5px;
+}
+
+.block3 {
+  color: white;
+  background-color: darkred;
+  padding: 5px;
+  margin: 5px;
+}
+
+.inline1 {
+  color: white;
+  background-color: blue;
+}
+
+.inline2 {
+  color: black;
+  background-color: lightblue;
+}
+
+.inline3 {
+  color: white;
+  background-color: darkblue;
+}

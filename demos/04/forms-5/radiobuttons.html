@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Forms - Radio Buttons</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <form action="./../responses/post.php" method="post">
+      <fieldset>
+        <legend>Favorite Animal</legend>
+        <p>
+          <input
+            type="radio"
+            name="favorite_animal"
+            id="field1"
+            value="alligator"
+          />
+          <label for="field1">Alligator</label>
+        </p>
+        <p>
+          <input
+            type="radio"
+            name="favorite_animal"
+            id="field2"
+            value="cheetah"
+          />
+          <label for="field2">Cheetah</label>
+        </p>
+        <p>
+          <input
+            type="radio"
+            name="favorite_animal"
+            id="field3"
+            value="giraffe"
+          />
+          <label for="field3">Giraffe</label>
+        </p>
+        <p>
+          <input
+            type="radio"
+            name="favorite_animal"
+            id="field4"
+            value="hippo"
+            checked
+          />
+          <label for="field4">Hippo (must be the favorite, or?)</label>
+        </p>
+        <p>
+          <input
+            type="radio"
+            name="favorite_animal"
+            id="field5"
+            value="monkey"
+          />
+          <label for="field5">Monkey</label>
+        </p>
+      </fieldset>
+      <button type="submit">Send the Form</button>
+    </form>
+  </body>
+</html>

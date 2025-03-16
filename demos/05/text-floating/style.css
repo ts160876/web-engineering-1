@@ -1,0 +1,22 @@
+p.cheetah,
+p.monkey {
+  background-color: yellow;
+}
+
+p.giraffe {
+  background-color: lightgray;
+}
+
+.picture-left-floating {
+  float: left;
+  margin-right: 10px;
+}
+
+.picture-right-floating {
+  float: right;
+  margin-left: 10px;
+}
+
+.clear-floating {
+  clear: both;
+}

@@ -3,16 +3,15 @@ $text = "You have not told me your name. You can do this via query parameters.";
 $first_name = htmlspecialchars($_GET["first_name"]);
 $last_name = htmlspecialchars($_GET["last_name"]);
 if ($first_name != "" or $last_name != "") {
-  $text = "You have told me your name: " . $first_name . " " .$last_name;
+  $text = "You have told me your name: " . $first_name . " " . $last_name;
 }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
 <head>
   <title>Demonstration of URLs</title>
   <meta charset="UTF-8" />
-  <meta name="author" content="Thorsten Schneider" />
 </head>
 
 <body>
