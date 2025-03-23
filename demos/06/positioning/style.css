@@ -1,0 +1,72 @@
+div {
+  color: white;
+  background-color: black;
+  font-size: 2em;
+  padding: 10px;
+  margin: 10px;
+}
+
+#static {
+  color: black;
+  background-color: yellow;
+  position: static;
+}
+
+#relative {
+  color: black;
+  background-color: yellow;
+  position: relative;
+  left: 50px;
+  top: 50px;
+}
+
+#absolute {
+  color: black;
+  background-color: yellow;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+
+#absolute-1 {
+  color: black;
+  background-color: yellow;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  z-index: 10;
+}
+
+#absolute-2 {
+  color: black;
+  background-color: red;
+  position: absolute;
+  left: 60px;
+  top: 60px;
+  z-index: 20;
+}
+
+#absolute-3 {
+  color: black;
+  background-color: green;
+  position: absolute;
+  left: 90px;
+  top: 90px;
+  z-index: 30;
+}
+
+#fixed {
+  color: black;
+  background-color: yellow;
+  position: fixed;
+  left: 50px;
+  top: 50px;
+}
+
+#sticky {
+  color: black;
+  background-color: yellow;
+  position: sticky;
+  left: 50px;
+  top: 50px;
+}

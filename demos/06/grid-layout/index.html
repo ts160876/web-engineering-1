@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>CSS - Grid Layout</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="gridcontainer">
+      <div class="griditem" id="alligator">Alligator</div>
+      <div class="griditem" id="cheetah">Cheetah</div>
+      <div class="griditem" id="elephant">
+        Elephant<br />Flamingo<br />Giraffe
+      </div>
+      <div class="griditem" id="hippo">Hippo</div>
+      <div class="griditem" id="iguana">Iguana Kangaroo Koala</div>
+      <div class="griditem" id="monkey">Monkey</div>
+    </div>
+    <form>
+      <fieldset>
+        <legend>Grid Container</legend>
+        <label for="display">display:</label>
+        <select id="display">
+          <option value="block">block</option>
+          <option value="grid">grid</option>
+        </select>
+        <label for="container-margin">margin:</label>
+        <input type="number" id="container-margin" value="10" />
+        <label for="grid-template-columns">grid-template-columns:</label>
+        <select id="grid-template-columns">
+          <option value="1fr">1fr</option>
+          <option value="1fr 1fr 1fr">1fr 1fr 1fr</option>
+          <option value="2fr 4fr">1fr 4fr</option>
+          <option value="1fr 1fr 2fr">1fr 1fr 2fr</option>
+          <option value="repeat(2, 1fr) 4fr">repeat(2, 1fr) 4fr</option>
+        </select>
+        <label for="column-gap">column-gap:</label>
+        <input type="number" id="column-gap" value="0" />
+        <label for="row-gap">row-gap:</label>
+        <input type="number" id="row-gap" value="0" />
+      </fieldset>
+      <fieldset>
+        <legend>Grid Item</legend>
+        <label for="item-margin">margin:</label>
+        <input type="number" id="item-margin" value="10" />
+      </fieldset>
+      <fieldset>
+        <legend>Placement of Grid Items</legend>
+        <input type="checkbox" id="placement" />
+        <label for="placement">Place the items explicitly</label>
+        <br />
+        <label for="alligator-grid-column">alligator-grid-column:</label>
+        <input type="text" id="alligator-grid-column" />
+        <label for="alligator-grid-row">alligator-grid-row:</label>
+        <input type="text" id="alligator-grid-row" />
+        <br />
+        <label for="cheetah-grid-column">cheetah-grid-column:</label>
+        <input type="text" id="cheetah-grid-column" />
+        <label for="cheetah-grid-row">cheetah-grid-row:</label>
+        <input type="text" id="cheetah-grid-row" />
+        <br />
+        <label for="elephant-grid-column">elephant-grid-column:</label>
+        <input type="text" id="elephant-grid-column" />
+        <label for="elephant-grid-row">elephant-grid-row:</label>
+        <input type="text" id="elephant-grid-row" />
+        <br />
+        <label for="hippo-grid-column">hippo-grid-column:</label>
+        <input type="text" id="hippo-grid-column" />
+        <label for="hippo-grid-row">hippo-grid-row:</label>
+        <input type="text" id="hippo-grid-row" />
+        <br />
+        <label for="iguana-grid-column">iguana-grid-column:</label>
+        <input type="text" id="iguana-grid-column" />
+        <label for="iguana-grid-row">iguana-grid-row:</label>
+        <input type="text" id="iguana-grid-row" />
+        <br />
+        <label for="monkey-grid-column">monkey-grid-column:</label>
+        <input type="text" id="monkey-grid-column" />
+        <label for="monkey-grid-row">monkey-grid-row:</label>
+        <input type="text" id="monkey-grid-row" />
+      </fieldset>
+      <button type="button" id="adjustLayoutButton" onclick="adjustLayout()">
+        Adjust the Layout
+      </button>
+    </form>
+  </body>
+</html>

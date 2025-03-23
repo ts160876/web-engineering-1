@@ -1,0 +1,24 @@
+:root {
+  --flexboxBackgroundColor: black;
+  --flexboxColor: white;
+  --flexitemBackgroundColor: yellow;
+  --flexitemColor: black;
+  --somePadding: 10px;
+  --morePadding: 10px;
+}
+
+.flexbox {
+  display: flex;
+  background-color: var(--flexboxBackgroundColor);
+  color: var(--flexboxColor);
+  padding: calc(var(--somePadding) + var(--morePadding));
+  margin: 10px;
+}
+
+.flexitem {
+  background-color: var(--flexitemBackgroundColor);
+  color: var(--flexitemColor);
+  padding: var(--samePaddingEverywhere);
+  padding: calc(var(--somePadding) + var(--morePadding));
+  margin: 10px;
+}

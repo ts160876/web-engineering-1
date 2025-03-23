@@ -1,0 +1,15 @@
+.books {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: stretch;
+}
+
+.book {
+  background-color: black;
+  color: white;
+  padding: 50px;
+  margin: 10px;
+  text-align: center;
+  flex-grow: 1;
+}

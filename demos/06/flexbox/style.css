@@ -1,0 +1,14 @@
+.flexbox {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+}
+
+.flexitem {
+  background-color: yellow;
+  color: black;
+  padding: 10px;
+  margin: 10px;
+}

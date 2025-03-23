@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>CSS - Flexbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="flexbox">
+      <div class="flexitem">Alligator</div>
+      <div class="flexitem">Cheetah</div>
+      <div class="flexitem">Elephant<br />Flamingo<br />Giraffe</div>
+      <div class="flexitem">Hippo</div>
+      <div class="flexitem">Iguana Kangaroo Koala</div>
+      <div class="flexitem">Monkey</div>
+    </div>
+    <form>
+      <fieldset>
+        <legend>Flex Container</legend>
+        <label for="display">display:</label>
+        <select id="display">
+          <option value="block">block</option>
+          <option value="flex">flex</option>
+        </select>
+        <label for="overflow">overflow:</label>
+        <select id="overflow">
+          <option value="visible">visible</option>
+          <option value="hidden">hidden</option>
+          <option value="clip">clip</option>
+          <option value="scroll">scroll</option>
+          <option value="auto">auto</option>
+        </select>
+        <label for="height">height:</label>
+        <input type="number" id="height" value="300" />
+        <label for="flex-direction">flex-direction:</label>
+        <select id="flex-direction">
+          <option value="row">row</option>
+          <option value="row-reverse">row-reverse</option>
+          <option value="column">column</option>
+          <option value="column-reverse">column-reverse</option>
+        </select>
+        <label for="flex-wrap">flex-wrap:</label>
+        <select id="flex-wrap">
+          <option value="nowrap">nowrap</option>
+          <option value="wrap">wrap</option>
+          <option value="wrap-reverse">wrap-reverse</option>
+        </select>
+        <label for="align-items">align-items:</label>
+        <select id="align-items">
+          <option value="stretch">stretch</option>
+          <option value="start">start</option>
+          <option value="end">end</option>
+          <option value="center">center</option>
+        </select>
+        <label for="justify-content">justify-content:</label>
+        <select id="justify-content">
+          <option value="start">start</option>
+          <option value="end">end</option>
+          <option value="center">center</option>
+          <option value="space-evenly">space-evenly</option>
+        </select>
+        <label for="align-content">align-content:</label>
+        <select id="align-content">
+          <option value="start">start</option>
+          <option value="end">end</option>
+          <option value="center">center</option>
+          <option value="space-evenly">space-evenly</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Flex Item</legend>
+        <label for="flex-grow">flex-grow:</label>
+        <input type="number" id="flex-grow" value="0" />
+        <label for="flex-shrink">flex-shrink:</label>
+        <input type="number" id="flex-shrink" value="0" />
+      </fieldset>
+      <button type="button" id="adjustLayoutButton" onclick="adjustLayout()">
+        Adjust the Layout
+      </button>
+    </form>
+  </body>
+</html>

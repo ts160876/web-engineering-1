@@ -1,0 +1,18 @@
+.books {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.book {
+  background-color: black;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+#schwarzbrenner {
+  grid-column: 2 / 4;
+  grid-row: 2;
+}

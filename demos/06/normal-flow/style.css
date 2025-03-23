@@ -1,0 +1,26 @@
+body {
+  font-size: 2em;
+}
+
+#p1 {
+  color: white;
+  background-color: green;
+  border: 1px solid darkgreen;
+}
+
+#p2 {
+  color: white;
+  background-color: blue;
+  border: 1px solid darkblue;
+}
+
+#p3 {
+  color: white;
+  background-color: red;
+  border: 1px solid darkred;
+}
+
+strong {
+  color: black;
+  background-color: white;
+}

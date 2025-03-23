@@ -1,0 +1,46 @@
+.gridcontainer {
+  display: grid;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  grid-template-areas:
+    "alligator cheetah ."
+    "elephant elephant elephant"
+    "hippo iguana ."
+    ". iguana ."
+    ". iguana monkey";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 100px;
+}
+
+.griditem {
+  background-color: yellow;
+  color: black;
+  padding: 10px;
+  margin: 10px;
+}
+
+#alligator {
+  grid-area: alligator;
+}
+
+#cheetah {
+  grid-area: cheetah;
+}
+
+#elephant {
+  grid-area: elephant;
+}
+
+#hippo {
+  grid-area: hippo;
+}
+
+#iguana {
+  grid-area: iguana;
+}
+
+#monkey {
+  grid-area: monkey;
+}

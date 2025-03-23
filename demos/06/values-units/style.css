@@ -1,0 +1,21 @@
+html {
+  font-size: 1em;
+}
+
+div.box {
+  background-color: black;
+  color: white;
+  margin: 10px;
+}
+
+#div1 {
+  width: 500px;
+}
+
+#div2 {
+  width: 50vw;
+}
+
+#div3 {
+  width: 50em;
+}
