@@ -1,6 +1,6 @@
 #box {
   font-size: 2em;
-  background-image: url(cheetah.jpg);
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/36/Cheetah_%28Acinonyx_jubatus%29_female_2.jpg");
   background-clip: border-box;
   background-repeat: no-repeat;
   overflow: auto;

@@ -70,7 +70,7 @@
 
 #box7 {
   color: black;
-  background-image: url(cheetah.jpg);
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/36/Cheetah_%28Acinonyx_jubatus%29_female_2.jpg");
   background-clip: content-box;
   padding: 20px;
   border: dashed 5px red;
@@ -80,7 +80,7 @@
 
 #box8 {
   color: black;
-  background-image: url(cheetah.jpg);
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/36/Cheetah_%28Acinonyx_jubatus%29_female_2.jpg");
   background-clip: padding-box;
   padding: 20px;
   border: dashed 5px red;
@@ -90,7 +90,7 @@
 
 #box9 {
   color: black;
-  background-image: url(cheetah.jpg);
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/36/Cheetah_%28Acinonyx_jubatus%29_female_2.jpg");
   background-clip: border-box;
   padding: 20px;
   border: dashed 5px red;

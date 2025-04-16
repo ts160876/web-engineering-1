@@ -3,7 +3,7 @@ $cookie_name = "web-engineering-cookie";
 if (!isset($_COOKIE[$cookie_name])) {
     $cookie_value = 1;
 } else {
-    $cookie_value = intval($_COOKIE[$cookie_name]) +1;
+    $cookie_value = intval($_COOKIE[$cookie_name]) + 1;
 }
 setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
 ?>
@@ -14,7 +14,6 @@ setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
 <head>
     <title>Demonstrating Cookies</title>
     <meta charset="UTF-8" />
-    <meta name="author" content="Thorsten Schneider" />
 </head>
 
 <body>
