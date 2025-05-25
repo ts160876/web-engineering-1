@@ -23,7 +23,7 @@ function reduceCountdown() {
   if (i == 0) {
     element.textContent = "Countdown is over.";
     //Stop the interval timer
-    window.clearTimeout(t);
+    window.clearInterval(t);
   } else {
     element.textContent = writeCountdown();
   }
