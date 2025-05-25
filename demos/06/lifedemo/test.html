@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sticky bei horizontalem Scrollen</title>
+    <style>
+      .scroll-container {
+        width: 100%;
+        overflow-x: auto;
+        border: 2px solid #ccc;
+        white-space: nowrap;
+      }
+
+      .item {
+        display: inline-block;
+        width: 200px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        background-color: lightblue;
+        border-right: 1px solid #aaa;
+      }
+
+      .sticky {
+        position: sticky;
+        left: 0;
+        background-color: #ffb347;
+        z-index: 10;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Sticky Element bei horizontalem Scrollen</h2>
+
+    <div class="scroll-container">
+      <div class="item">Item 1</div>
+      <div class="item sticky">Sticky</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+      <div class="item">Item 7</div>
+      <div class="item">Item 8</div>
+    </div>
+  </body>
+</html>

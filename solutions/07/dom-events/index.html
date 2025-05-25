@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>JavaScript - DOM Events</title>
+    <meta charset="UTF-8" />
+    <p>You can add and remove animals:</p>
+    <form>
+      <input type="radio" name="action" value="add" id="addAnimal" checked />
+      <label for="addAnimal">Add animal</label>
+      <br />
+      <input type="radio" name="action" value="remove" id="removeAnimal" />
+      <label for="removeAnimal">Remove animal</label>
+      <br />
+      <label for="name">Name</label>
+      <input type="text" id="name" />
+      <br />
+      <label for="class" id="class-label">Class</label>
+      <select id="class">
+        <option value="aves">Aves</option>
+        <option value="mammalia">Mammalia</option>
+        <option value="reptilia">Reptilia</option>
+      </select>
+      <br />
+      <button type="button" id="processForm">Add/Remove animal</button>
+    </form>
+
+    <p>These animals are currently in the zoo:</p>
+    <ul id="aves">
+      Aves
+    </ul>
+    <ul id="mammalia">
+      Mammalia
+    </ul>
+    <ul id="reptilia">
+      Reptilia
+    </ul>
+
+    <script src="index.js"></script>
+  </head>
+  <body></body>
+</html>

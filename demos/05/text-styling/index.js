@@ -48,7 +48,6 @@ function changeLineHeight(event) {
 }
 
 function changeTextDecoration(event) {
-  alert("Hello11");
   document.getElementById("paragraph").style.textDecoration =
     event.target.value + " black";
 }

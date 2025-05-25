@@ -1,3 +1,5 @@
+"use strict";
+
 let myNumber = 0;
 
 if (myNumber == 1) {

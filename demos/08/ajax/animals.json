@@ -1,0 +1,137 @@
+[
+  {
+    "Name": "Alligator",
+    "Temporal Range": "Late Eocene - Recent",
+    "Domain": "Eukaryota",
+    "Kingdom": "Animalia",
+    "Phylum": "Chordata",
+    "Class": "Reptilia",
+    "Order": "Crocodilia"
+  },
+  {
+    "Name": "Bear",
+    "Temporal Range": "Late Eocene - Recent",
+    "Domain": "Eukaryota",
+    "Kingdom": "Animalia",
+    "Phylum": "Chordata",
+    "Class": "Mammalia",
+    "Order": "Carnivora"
+  },
+  {
+    "Name": "Camel ",
+    "Temporal Range": "Pliocene - Recent",
+    "Domain": "Eukaryota",
+    "Kingdom": "Animalia",
+    "Phylum": "Chordata",
+    "Class": "Mammalia",
+    "Order": "Artiodactyla"
+  },
+  {
+    "Name": "Cheetah",
+    "Temporal Range": "Pleistocene - Recent",
+    "Domain": "Eukaryota",
+    "Kingdom": "Animalia",
+    "Phylum": "Chordata",
+    "Class": "Mammalia",
+    "Order": "Carnivora"
+  },
+  {
+    "Name": "Elephant",
+    "Temporal Range": "Late Miocene - Recent",
+    "Domain": "Eukaryota",
+    "Kingdom": "Animalia",
+    "Phylum": "Chordata",
+    "Class": "Mammalia",
+    "Order": "Proboscidea"
+  },
+  {
+    "Name": "Flamingo",
+    "Temporal Range": "Late Oligocene - Recent",
+    "Domain": "Eukaryota",
+    "Kingdom": "Animalia",
+    "Phylum": "Chordata",
+    "Class": "Aves",
+    "Order": "Phoenicopteriformes"
+  },
+  {
+    "Name": "Giraffe",
+    "Temporal Range": "Miocene - Recent",
+    "Domain": "Eukaryota",
+    "Kingdom": "Animalia",
+    "Phylum": "Chordata",
+    "Class": "Mammalia",
+    "Order": "Artiodactyla"
+  },
+  {
+    "Name": "Hippo",
+    "Temporal Range": "Pleistocene - Recent",
+    "Domain": "Eukaryota",
+    "Kingdom": "Animalia",
+    "Phylum": "Chordata",
+    "Class": "Mammalia",
+    "Order": "Artiodactyla"
+  },
+  {
+    "Name": "Hyena",
+    "Temporal Range": "Early Miocene - Recent",
+    "Domain": "Eukaryota",
+    "Kingdom": "Animalia",
+    "Phylum": "Chordata",
+    "Class": "Mammalia",
+    "Order": "Carnivora"
+  },
+  {
+    "Name": "Iguana",
+    "Temporal Range": "Holocene - Recent",
+    "Domain": "Eukaryota",
+    "Kingdom": "Animalia",
+    "Phylum": "Chordata",
+    "Class": "Reptilia",
+    "Order": "Squamata"
+  },
+  {
+    "Name": "Kangaroo",
+    "Temporal Range": "Early Miocene - Recent",
+    "Domain": "Eukaryota",
+    "Kingdom": "Animalia",
+    "Phylum": "Chordata",
+    "Class": "Mammalia",
+    "Order": "Diprotodontia"
+  },
+  {
+    "Name": "Koala",
+    "Temporal Range": "Middle Pleistocene - Recent",
+    "Domain": "Eukaryota",
+    "Kingdom": "Animalia",
+    "Phylum": "Chordata",
+    "Class": "Mammalia",
+    "Order": "Diprotodontia"
+  },
+  {
+    "Name": "Lion",
+    "Temporal Range": "Pleistocene - Recent",
+    "Domain": "Eukaryota",
+    "Kingdom": "Animalia",
+    "Phylum": "Chordata",
+    "Class": "Mammalia",
+    "Order": "Carnivora"
+  },
+  {
+    "Name": "Monkey",
+    "Temporal Range": "Late Eocene - Recent",
+    "Domain": "Eukaryota",
+    "Kingdom": "Animalia",
+    "Phylum": "Chordata",
+    "Class": "Mammalia",
+    "Order": "Primates"
+  },
+  {
+    "Name": "Snake",
+    "Temporal Range": "Late Cretaceous - Recent",
+    "Domain": "Eukaryota",
+    "Kingdom": "Animalia",
+    "Phylum": "Chordata",
+    "Class": "Reptilia",
+    "Order": "Squamata"
+  }
+]

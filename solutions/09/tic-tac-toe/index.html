@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Tic Tac Toe</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <img
+        src="tic-tag-toe.jpg"
+        alt="Tic Tac Toe"
+        height="100px"
+        width="450px"
+      />
+    </header>
+    <main>
+      <div class="container" id="about">
+        <p>
+          Tic Tac Toe is a simple two-player game where players take turns
+          marking X or O on a 3x3 grid. The goal is to be the first to get three
+          of their symbols in a row - horizontally, vertically, or diagonally.
+          Do you like to play?
+        </p>
+        <button id="aboutToPlayers">Play a Game</button>
+        <button id="aboutToLeaderboard">Leaderboard</button>
+      </div>
+      <div class="container hidden" id="game">
+        <div class="container hidden" id="players">
+          <p id="players-text"></p>
+          <div class="players-grid">
+            <div class="players-cell"><b>Player 1</b></div>
+            <div class="players-cell"><b>Player 2</b></div>
+            <input
+              class="players-cell"
+              type="text"
+              maxlength="15"
+              placeholder="Enter name"
+              required
+              id="players-name1"
+            />
+            <input
+              class="players-cell"
+              type="text"
+              maxlength="15"
+              placeholder="Enter name"
+              required
+              id="players-name2"
+            />
+            <input class="players-cell" type="color" id="players-color1" />
+            <input class="players-cell" type="color" id="players-color2" />
+          </div>
+          <br />
+          <button id="playersToAbout">Back</button>
+          <button id="playersToBoard">Continue</button>
+        </div>
+        <div class="container hidden" id="board">
+          <p id="board-text"></p>
+          <div class="board-grid">
+            <div class="board-cell" id="board-c00"></div>
+            <div class="board-cell" id="board-c01"></div>
+            <div class="board-cell" id="board-c02"></div>
+            <div class="board-cell" id="board-c10"></div>
+            <div class="board-cell" id="board-c11"></div>
+            <div class="board-cell" id="board-c12"></div>
+            <div class="board-cell" id="board-c20"></div>
+            <div class="board-cell" id="board-c21"></div>
+            <div class="board-cell" id="board-c22"></div>
+          </div>
+          <br />
+          <button id="boardToAbout">Back</button>
+        </div>
+      </div>
+      <div class="container hidden" id="leaderboard">
+        <p>This is the all-time leaderboard. Play to make it to the top.</p>
+        <table>
+          <thead id="leaderboard-head">
+            <tr>
+              <th>Player</th>
+              <th class="right-align">Won</th>
+              <th class="right-align">Lost</th>
+            </tr>
+          </thead>
+          <tbody id="leaderboard-body"></tbody>
+        </table>
+        <br />
+        <button id="leaderboardToAbout">Back</button>
+      </div>
+    </main>
+  </body>
+  <script type="module" src="index.js"></script>
+</html>

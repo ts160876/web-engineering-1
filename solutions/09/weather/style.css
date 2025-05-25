@@ -1,0 +1,64 @@
+/* Standard font: Arial, 24px */
+html,
+button,
+input {
+  font-family: Arial;
+  font-size: 16px;
+}
+
+/* Add some margin before the header. */
+header {
+  margin-top: 25px;
+}
+
+/* Table formats */
+table {
+  width: 100%;
+}
+
+thead {
+  background-color: black;
+  color: white;
+}
+
+tbody {
+  color: black;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 5px;
+}
+
+th.right-align,
+td.right-align {
+  text-align: right;
+}
+
+tbody th,
+tbody td {
+  border-bottom: solid 1px black;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: white;
+  border: inherit;
+}
+
+tbody tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+/* Container */
+.container {
+  display: block;
+  width: 600px;
+  text-align: center;
+  margin: 0 auto 25px auto;
+}
+
+/* Map */
+#map {
+  height: 200px;
+}

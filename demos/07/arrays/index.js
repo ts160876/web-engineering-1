@@ -1,3 +1,5 @@
+"use strict";
+
 let animals = ["Alligator", "Cheetah", "Giraffe", "Hippo", "Monkey"];
 
 for (let i = 0; i < animals.length; i++) {

@@ -1,0 +1,21 @@
+div {
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+.l1 {
+  background-color: black;
+  color: white;
+}
+
+.l2 {
+  background-color: yellow;
+  color: black;
+}
+
+.l3 {
+  background-color: blue;
+  color: white;
+  height: 20px;
+}
