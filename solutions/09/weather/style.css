@@ -53,7 +53,7 @@ tbody tr:nth-child(even) {
 /* Container */
 .container {
   display: block;
-  width: 600px;
+  width: 800px;
   text-align: center;
   margin: 0 auto 25px auto;
 }

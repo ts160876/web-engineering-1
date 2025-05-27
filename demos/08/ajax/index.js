@@ -18,7 +18,7 @@ function handleButton1() {
   xhttp.onload = function () {
     receiveData(this.responseText, this.status);
   };
-  xhttp.open("GET", "animals.php", true);
+  xhttp.open("GET", "animals.json", true);
   xhttp.send();
 }
 

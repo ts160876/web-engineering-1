@@ -14,7 +14,15 @@ function handleButton1() {
   myInterval = window.setInterval(showProgress, 1000);
 
   //Fetch the data
-  fetchData();
+  //fetchData();
+  fetch("animals.php")
+    .then((response) => response.text())
+    .then((text) => (document.getElementById("myMessage").textContent = text))
+    .catch(
+      (error) =>
+        (document.getElementById("myMessage").textContent =
+          "Data could not be received. An error happened.")
+    );
 }
 
 //Handle button 2
@@ -29,9 +37,9 @@ function showProgress() {
     document.getElementById("myMessage").textContent + ".";
 }
 
-//Fetch the data
+//Fetch the data (with an asynchronous function)
 async function fetchData() {
-  const fetchPromise = await fetch("animals.php");
+  const fetchPromise = await fetch("animals.json");
 
   if (fetchPromise.ok == true) {
     document.getElementById("myMessage").textContent =

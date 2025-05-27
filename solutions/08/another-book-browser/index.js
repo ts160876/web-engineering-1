@@ -9,7 +9,7 @@ function startSearch() {
   let isbn = document.getElementById("isbn").value;
   let key = "ISBN:" + isbn;
 
-  //Create a new request
+  //Create a new request (this time we do it synchronously)
   let xhttp = new XMLHttpRequest();
   xhttp.open(
     "GET",

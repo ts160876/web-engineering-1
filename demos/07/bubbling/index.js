@@ -2,6 +2,7 @@
 
 function clicked(event) {
   alert(event.currentTarget.id);
+  //event.stopImmediatePropagation();
 }
 
 //Register the same event handler for multiple elements / events
