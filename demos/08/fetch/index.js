@@ -16,13 +16,24 @@ function handleButton1() {
   //Fetch the data
   //fetchData();
   fetch("animals.php")
-    .then((response) => response.text())
-    .then((text) => (document.getElementById("myMessage").textContent = text))
-    .catch(
-      (error) =>
-        (document.getElementById("myMessage").textContent =
-          "Data could not be received. An error happened.")
-    );
+    .then((response) => {
+      if (response.ok) {
+        return response.text();
+      } else {
+        throw new Error(`HTTP status ${response.status}`);
+      }
+    })
+    .then((text) => {
+      document.getElementById("myMessage").textContent = text;
+    })
+    .catch((error) => {
+      document.getElementById("myMessage").textContent =
+        "Data could not be received. An error happened.";
+    })
+    .finally(() => {
+      window.clearInterval(myInterval);
+      myInterval = null;
+    });
 }
 
 //Handle button 2
