@@ -12,10 +12,35 @@ function print(textContent) {
   }
 }
 
+function doSomethingQuickly() {
+  return "I have done something quickly.";
+}
+
+function doSomethingSlowly() {
+  let end = Date.now() + 7000;
+  while (Date.now() < end) {}
+  return "I have done it slowly";
+}
+
+function doSomethingAsynchronously(tellMe) {
+  setTimeout(() => {
+    tellMe("I have done it async.");
+  }, 7000);
+}
+
 //Handle button 1 (start doing something)
-function handleButton1() {}
+function handleButton1() {
+  //alert("You pressed the button 1");
+  print(doSomethingQuickly());
+  print(doSomethingQuickly());
+  print(doSomethingQuickly());
+  print(doSomethingQuickly());
+  print(doSomethingQuickly());
+  //print(doSomethingSlowly());
+  doSomethingAsynchronously(print);
+}
 
 //Handle button 2 (send a popup)
 function handleButton2() {
-  alert("You pressed the button");
+  alert("You pressed the button 2");
 }
