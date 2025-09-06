@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Example 2 (Search Screen)</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="SearchScreen">
+      <h1>Search Screen</h1>
+      <form action="./result.php" action="get">
+        <label for="isbn">ISBN</label>
+        <input type="text" name="isbn" id="ISBN" required />
+        <button type="button" id="SearchBooks">Search Books</button>
+        <p>Example of an existing ISBN: 9783492074001</p>
+      </form>
+    </div>
+    <div id="ResultScreen" class="hidden">
+      <h1>Result Screen</h1>
+      <ul id="ResultList"></ul>
+      <form action="./index.html" action="get">
+        <button type="button" id="NewSearch">New Search</button>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
