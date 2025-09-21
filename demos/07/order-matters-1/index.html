@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>Order Matters 1!</title>
+  <meta charset="UTF-8" />
+  <script>
+    console.log("I am in the header.");
+  </script>
+</head>
+
+<body>
+  <ul>
+    <li>Alligators are large reptiles.</li>
+    <script>console.log("I follow Alligators.");</script>
+    <li>Cheetahs are fast-running big cat.</li>
+    <script>
+      console.log("I follow Cheetahs.");
+      if (document.getElementById("flamingos") != null) {
+        console.log("And I have seen Flamingos.")
+      } else {
+        console.log("And I have not seen Flamingos.")
+      }
+    </script>
+    <li id="flamingos">Flamingos are striking wading birds.</li>
+    <script>console.log("I follow Flamingos");</script>
+    <li>Giraffes are the tallest land mammals.</li>
+    <script>console.log("I follow Giraffes");
+      if (document.getElementById("flamingos") != null) {
+        console.log("And I have seen Flamingos.")
+      } else {
+        console.log("And I have not seen Flamingos.")
+      }
+    </script>
+    <li>Hippos are large.</li>
+    <script>console.log("I follow Hippos");</script>
+  </ul>
+</body>
+
+</html>

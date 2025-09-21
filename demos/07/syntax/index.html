@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <title>JavaScript - Basic Syntax</title>
-    <meta charset="UTF-8" />
-    <script>
-      //Use strict rules (e.g., prevents the use of undeclared variables)
-      "use strict";
 
-      //Declare a constant
-      const date = new Date();
-      //Declare a variable and fill it from a prompt
-      let aNumber = prompt("How many numbers do you want?");
+<head>
+  <title>JavaScript - Basic Syntax</title>
+  <meta charset="UTF-8" />
+  <script>
+    //Use strict rules (e.g., prevents the use of undeclared variables)
+    "use strict";
 
-      //Print the (current) date to the console
-      console.log("Today is " + date);
+    //Declare a constant
+    const aDate = new Date();
+    //Declare a variable and fill it from a prompt
+    let aNumber = prompt("How many numbers do you want?");
 
-      //Repeat the following code aNumber times
-      for (let i = 1; i <= aNumber; i++) {
-        if (i % 2 == 0) {
-          //The current number can be divided by 2
-          console.log(i + " can be divided by 2.");
-        } else {
-          //The current number cannot be divided by 2
-          console.log(i + " cannot be divided by 2.");
-        }
+    //Print the (current) date to the console
+    console.log("Today is " + aDate);
+
+    //Repeat the following code aNumber times
+    for (let i = 1; i <= aNumber; i++) {
+      if (i % 2 == 0) {
+        //The current number can be divided by 2
+        console.log(i + " can be divided by 2.");
+      } else {
+        //The current number cannot be divided by 2
+        console.log(i + " cannot be divided by 2.");
       }
-    </script>
-  </head>
-  <body>
-    <h1>First Web Page</h1>
-    <p>Hello and Welcome!</p>
-  </body>
+    }
+  </script>
+</head>
+
+<body>
+  <h1>First Web Page</h1>
+  <p>Hello and Welcome!</p>
+</body>
+
 </html>

@@ -1,31 +1,24 @@
 "use strict";
 
-//Function declaration (hoisted!)
-function add_v1(a, b) {
-  return a + b;
-}
-
-//Anonymous function expression
-const add_v2 = function (a, b) {
+//Function expression assigned to a constant
+const addTwoNumbers = function (a, b) {
   return a + b;
 };
 
-//Named function expression
-const add_v3 = function aName(a, b) {
-  return a + b;
+//Another function expression assigned to another constant
+const callAFunction = function (f) {
+  return f(5, 7);
 };
 
-//Arrow function (block body)
-const add_v4 = (a, b) => {
-  return a + b;
-};
-
-//Arrow function (concise body)
-const add_v5 = (a, b) => a + b;
-
-//Quiz
-const addTwoNumbers = (a, b) => a + b;
-
+//Function invocation via the constant
 console.log(addTwoNumbers(5, 7));
-console.log(addTwoNumbers);
-console.log(typeof addTwoNumbers);
+
+//Function invocation via the constant passing the other constant (function)
+console.log(callAFunction(addTwoNumbers));
+
+//Function invocation via the constant passing a function expression
+console.log(
+  callAFunction(function (a, b) {
+    return a + b;
+  })
+);

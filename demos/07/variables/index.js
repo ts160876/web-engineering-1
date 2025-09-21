@@ -1,4 +1,4 @@
-//Variables do not need a declaration except with "use strict".
+//Variables do not need a declaration without "use strict".
 aVariable = 4;
 console.log(aVariable);
 //Variables can change their data type.

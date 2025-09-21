@@ -1,13 +1,22 @@
-let s1 = "My first string";
-let s2 = "My second string";
+"use strict";
 
-let s3 = s1 + " is concatenated with " + s2;
-console.log(s3);
+let myString = "My first string";
+console.log(myString.length);
 
-let n1 = 4;
-let n2 = 5;
-console.log(`${n1} + ${n2} = ${n1 + n2}`);
+let person1 = "Tim";
+let age1 = 16;
+let person2 = "Struppi";
+let age2 = 7;
 
-let i = 0;
-console.log(s1.length); //length property of a string
-console.log(s1[i]); //access character at index i; the index starts at 0
+console.log(
+  person1 +
+    " und " +
+    person2 +
+    " sind zusammen " +
+    (age1 + age2) +
+    " Jahre alt."
+);
+
+console.log(
+  `${person1} und ${person2} sind zusammen ${age1 + age2} Jahre alt.`
+);

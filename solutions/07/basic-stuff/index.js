@@ -1,31 +1,22 @@
 "use strict";
 
-class Calculation {
-  //Constructor
-  constructor(number1, operator, number2) {
-    this.number1 = number1;
-    this.operator = operator;
-    this.number2 = number2;
+//Calculate the result (if the operator is not valid, the result will be undefined;)
+function calculate(calculation) {
+  switch (calculation.operator) {
+    case "+":
+      calculation.result = calculation.number1 + calculation.number2;
+      break;
+    case "-":
+      calculation.result = calculation.number1 - calculation.number2;
+      break;
+    case "*":
+      calculation.result = calculation.number1 * calculation.number2;
+      break;
+    case "/":
+      calculation.result = calculation.number1 / calculation.number2;
+      break;
   }
-
-  //Calculate the result (if the operator is not valid, the result will be undefined;)
-  calculate() {
-    switch (this.operator) {
-      case "+":
-        this.result = this.number1 + this.number2;
-        break;
-      case "-":
-        this.result = this.number1 - this.number2;
-        break;
-      case "*":
-        this.result = this.number1 * this.number2;
-        break;
-      case "/":
-        this.result = this.number1 / this.number2;
-        break;
-    }
-    return this.result;
-  }
+  return calculation.result;
 }
 
 //Global variables
@@ -38,10 +29,15 @@ while (continueTheCalculation) {
   let operator = prompt("Enter the operator:");
   let number2 = parseInt(prompt("Enter number 2:"));
   if (number1 != undefined && operator != undefined && number2 != undefined) {
-    let calculation = new Calculation(number1, operator, number2);
+    let calculation = {
+      number1: number1,
+      operator: operator,
+      number2: number2,
+    };
+
     if (
-      calculation.calculate() === undefined ||
-      Number.isNaN(calculation.calculate()) === true
+      calculate(calculation) === undefined ||
+      Number.isNaN(calculate(calculation)) === true
     ) {
       alert(`Something went wrong!`);
     } else {
