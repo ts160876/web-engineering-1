@@ -12,7 +12,7 @@ const alligator = {
   },
 };
 
-//Call the function
+//Call the method
 console.log(alligator.saySomething());
 
 //Extend the object
