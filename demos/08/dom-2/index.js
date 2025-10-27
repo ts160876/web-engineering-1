@@ -8,6 +8,9 @@ document
   .getElementById("findByProperties")
   .addEventListener("click", findByProperties);
 document
+  .getElementById("showInnerOuterText")
+  .addEventListener("click", showInnerOuterText);
+document
   .getElementById("changeTextContent")
   .addEventListener("click", changeTextContent);
 document
@@ -16,6 +19,11 @@ document
 document
   .getElementById("changeAttributes")
   .addEventListener("click", changeAttributes);
+document
+  .getElementById("showAttributes")
+  .addEventListener("click", showAttributes);
+document.getElementById("showClasses").addEventListener("click", showClasses);
+document.getElementById("showStyles").addEventListener("click", showStyles);
 document.getElementById("addElements").addEventListener("click", addElements);
 
 //Find elements
@@ -64,6 +72,14 @@ function findByProperties() {
   console.log(document.URL);
 }
 
+//Demonstrate content of an element
+function showInnerOuterText() {
+  let paragraph = document.getElementById("paragraph1");
+  console.log(`innerHTML: ${paragraph.innerHTML}`);
+  console.log(`outerHTML: ${paragraph.outerHTML}`);
+  console.log(`textContent: ${paragraph.textContent}`);
+}
+
 //Change text content of elements
 function changeTextContent() {
   //Change the text content of a list
@@ -100,6 +116,50 @@ function changeAttributes() {
   linkElement.setAttribute("href", "http://www.yahoo.com");
   linkElement.target = "_blank";
   //...style
+  linkElement.style.backgroundColor = "yellow";
+}
+
+//Demonstrate attributes
+function showAttributes() {
+  let linkElement = document.getElementById("link");
+
+  //Change attribute via setAttribute method
+  linkElement.setAttribute("target", "_parent");
+  //Change attribute via DOM property
+  linkElement.target = "_parent";
+  //Change attribute via attributes (NamedNodeMap)
+  linkElement.attributes["target"].value = "_parent";
+
+  //Iterate over all attributes (NamedNodeMap)
+  for (let i = 0; i < linkElement.attributes.length; i++) {
+    console.log(
+      linkElement.attributes[i].name + ": " + linkElement.attributes[i].value
+    );
+  }
+}
+
+//Demonstrate classes
+function showClasses() {
+  let linkElement = document.getElementById("link");
+  //Get class-attribute (all assigned classes)
+  console.log(linkElement.className);
+  //Set class-attribute (classes separated by space)
+  linkElement.className = "class11 class12";
+  //Add a class to the list
+  linkElement.classList.add("class4");
+  //Remove a class from the list
+  linkElement.classList.remove("class2");
+
+  //Iterate over all classes (DOMTokenList)
+  for (let i = 0; i < linkElement.classList.length; i++) {
+    console.log(linkElement.classList[i]);
+  }
+}
+
+//Demonstrate styles
+function showStyles() {
+  let linkElement = document.getElementById("link");
+  //Set background color
   linkElement.style.backgroundColor = "yellow";
 }
 
