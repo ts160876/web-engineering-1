@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Book Carousel</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="parameterScreen" class="center border">
+        <form>
+            <label for="delayInSeconds">Delay (in seconds)</label>
+            <input type="number" min="3" max="10" id="delayInSeconds" value="5">
+            <br>
+            <button type="button" id="startCarousel">Start Carousel</button>
+        </form>
+    </div>
+    <div id="carouselScreen" class="center border hidden">
+        <h1>Book of the Day</h1>
+        <img id="pictureOfABook" width="200" />
+        <p id="titleOfABook"></p>
+    </div>
+    <div id="countdownScreen" class="center hidden">
+        <p id="countdownTillNextBook"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

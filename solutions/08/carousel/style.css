@@ -1,0 +1,19 @@
+html {
+  font-family: Arial;
+}
+
+.center {
+  width: 300px;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.border {
+  border: 1px black solid;
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
