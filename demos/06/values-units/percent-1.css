@@ -1,0 +1,16 @@
+html {
+  font-size: 1em;
+}
+
+div.outer {
+  background-color: yellow;
+  color: black;
+  height: 500px;
+}
+
+div.inner {
+  background-color: black;
+  color: white;
+  height: 50%;
+  width: 50%;
+}
