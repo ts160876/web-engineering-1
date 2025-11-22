@@ -1,0 +1,56 @@
+/* Standard font: Arial, 24px */
+html,
+button,
+input {
+  font-family: Arial;
+  font-size: 24px;
+}
+
+/* Add some margin before the header. */
+header {
+  margin-top: 25px;
+}
+
+/* Container */
+.container {
+  display: block;
+  width: 450px;
+  text-align: center;
+  margin: 0 auto 25px auto;
+}
+
+.container.hidden {
+  display: none;
+}
+
+/* Players */
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 225px);
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.players-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Board */
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.board-cell {
+  display: flex;
+  border: black solid 1px;
+  height: 150px;
+  width: 150px;
+  font-size: 96px;
+  align-items: center;
+  justify-content: center;
+}
