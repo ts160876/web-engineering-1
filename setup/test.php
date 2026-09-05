@@ -8,9 +8,7 @@
 
 <body>
   <h1>Web Engineering 1</h1>
-  <p>Welcome to Web Engineering 1. The Apache Web Server is working and the demos, exercises and solutions are installed
-    correctly.</p>
-  </form>
+  <p><?php echo 'Welcome to Web Engineering 1. PHP is also funtioning.';?></p>
 </body>
 
 </html>

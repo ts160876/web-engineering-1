@@ -27,7 +27,11 @@ Subsequently you need to configure both extensions:
 
 ## Git Client
 
-Install Git from https://git-scm.com/downloads. You need this to easily download demos, exercises and solutions.
+Install **Git Client** from https://git-scm.com/downloads. You need this to easily download demos, exercises and solutions.
+
+## Wireshark
+
+Install **Wireshark** from https://www.wireshark.org/. Don't worry too much about the install options. Stick to the defaults.
 
 ## Apache Web Server
 
@@ -42,8 +46,53 @@ After unpacking the archive, test the installation by doing the following:
 - Start the **Apache Web Server** by running **httpd.exe** in C:\Apache24\bin.
 - Open http://localhost/ again. You should see a success message saying "It works!".
 
+## PHP
+
+**PHP** is a server-side scripting language used to create dynamic and interactive web applications. Install it from https://www.php.net/downloads.php:
+
+- Select **Windows**, **ZIP Downloads** and **version 8.5**.
+- Use the **Threat Safe** version (either x64 or x32, depending on your operating system).
+- Unpack the archive, for example, into C:\PHP-8.5.10, depending on the exact version.
+- Inside the folder copy php.ini-development to php.ini.
+
+Test PHP by running **php.exe -a** in C:\PHP-8.5.10. This will start an interactive shell. Enter the following lines one after another:
+
+```
+$a = 5;
+$b = 6;
+echo $a+$b;
+```
+
+This will print `11`. You can leave the interactive shell by entering `exit`.
+
+Next you need to configure Apache to find the PHP installation:
+
+- Open C:\Apache24\conf\httpd.conf and add the following lines:
+
+```
+LoadModule php_module "C:/PHP-8.5.10/php8apache2_4.dll"
+
+<FilesMatch \.php$>
+    SetHandler application/x-httpd-php
+</FilesMatch>
+
+PHPIniDir "C:/PHP-8.5.10"
+```
+
+- Find the following line:
+
+```
+DirectoryIndex index.html
+```
+
+- Replace it with:
+
+```
+DirectoryIndex index.php index.html
+```
+
 ## Demos, Exercises, Solutions
 
 Clone the repository https://github.com/ts160876/web-engineering-1.git into C:\Apache24\htdocs.
 
-Afterwards try to open http://localhost/web-engineering-1/setup/index.html. If the page is correctly displayed, you are done.
+Afterwards try to open http://localhost/web-engineering-1/setup/test.html as well as http://localhost/web-engineering-1/setup/test.php. If both pages are correctly displayed, you are done.
