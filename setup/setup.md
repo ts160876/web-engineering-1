@@ -65,7 +65,7 @@ This will print `11`. You can leave the interactive shell by entering `exit`.
 
 Next you need to configure the Apache Web Server to find the PHP installation:
 
-- Open `C:\Apache24\conf\httpd.conf` and add the following lines:
+- Open `C:\Apache24\conf\httpd.conf` and add the following lines (**pay attention to the paths; if you installed PHP elsewhere, you need to adapt them**):
 
 ```
 LoadModule php_module "C:/PHP-8.5.10/php8apache2_4.dll"
@@ -89,7 +89,7 @@ DirectoryIndex index.html
 DirectoryIndex index.php index.html
 ```
 
-Afterwards restart the **Apache Web Server** (by stopping it as starting it again as described above).
+Finally restart the Apache Web Server (by stopping it and afterwards starting it again as described above).
 
 ## Demos, Exercises, Solutions
 
