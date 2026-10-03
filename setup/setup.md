@@ -13,9 +13,10 @@ Install **Visual Studio Code** from https://code.visualstudio.com/download. In p
 Within Visual Studio Code, install the following extensions. You can do this via the **Extension** panel on the left or via the menu **View -> Extensions**.
 
 - **Live Preview**: hosts a local web server to easily preview web pages (HTML documents)
+- **HTMLHint**: linter that checks HTML code
 - **Prettier - Code formatter**: is a code formatter that helps to ensure that code is consistently formatted and readable
 
-Subsequently you need to configure both extensions:
+Subsequently you need to configure **Live Preview** and **Prettier - Code formatter**:
 
 - **Live Preview**: Ensure that the preview target is an external browser and that it defaults to Google Chrome.
   ![preview target](preview-target.png)

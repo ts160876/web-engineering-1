@@ -1,19 +1,19 @@
 <?php
-$first_name = htmlspecialchars($_POST["first_name"]);
-$last_name = htmlspecialchars($_POST["last_name"]);
+$first_name = $_GET["first_name"];
+$last_name = $_GET["last_name"];
 ?>
 
 <!DOCTYPE html>
 <html lang="en-US">
 
 <head>
-    <title>Result of POST request</title>
+    <title>Result of GET request</title>
     <meta charset="UTF-8" />
     <meta name="author" content="Thorsten Schneider" />
 </head>
 
 <body>
-    <h1>Result of POST requests</h1>
+    <h1>Result of GET requests</h1>
     <p>You have submitted the following data: </p>
     <ul>
         <li>First Name: <?php echo $first_name; ?></li>
