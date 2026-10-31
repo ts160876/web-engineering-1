@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Register with Buku Buku</title>
+    <meta charset="UTF-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="ps-4">
+        <form>
+            <fieldset class="border rounded p-3 mb-3">
+                <legend class="float-none w-auto px-2">Personal Data</legend>
+                <div class="form-field">
+                    <label for="first_name">First Name</label>
+                    <input type="text" name="first_name" id="first_name" maxlength="20" required />
+                </div>
+                <div class="form-field">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" name="last_name" id="last_name" maxlength="20" required />
+                </div>
+                <div class="form-field">
+                    <label for="e-mail">E-Mail</label>
+                    <input type="email" name="e-mail" id="e-mail" required />
+                </div>
+            </fieldset>
+            <fieldset class="border rounded p-3 mb-3">
+                <legend class="float-none w-auto px-2">Credit Card</legend>
+                <div class="form-field">
+                    <label for="credit_card_type">Credit Card Type</label>
+                    <select name="credit_card_type" id="credit_card_type" class="form-select" required>
+                        <option value="AmEx">AmEx</option>
+                        <option value="MasterCard">MasterCard</option>
+                        <option value="Visa">Visa</option>
+                    </select>
+                </div>
+                <div class="form-field">
+                    <label for="credit_card_number" id="credit_card_number">Credit Card Number</label>
+                    <input type="number" name="credit_card_number" id="credit_card_number" min="1111111111111111"
+                        max="9999999999999999" required />
+                </div>
+            </fieldset>
+            <fieldset class="border rounded p-3 mb-3">
+                <legend class="float-none w-auto px-2">Password</legend>
+                <div class="form-field">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" required />
+                    <div class="strength-bar" data-bs-strength></div>
+                </div>
+                <div class="form-field">
+                    <label for="passwort-repeat">Password (repeat)</label>
+                    <div class="form-field">
+                        <input type="password" name="passwort-repeat" id="passwort-repeat" required />
+                        <div class="strength-bar" data-bs-strength></div>
+                    </div>
+            </fieldset>
+            <fieldset class="border rounded p-3 mb-3">
+                <legend class="float-none w-auto px-2">Terms and Conditions</legend>
+                <div class="form-field">
+                    <input type="checkbox" class="check" required />
+                    <label>I accept the
+                        <a href="terms-and-conditions.html" target="_blank">Terms and Conditions for Buku
+                            Buku</a>.</label>
+                </div>
+
+            </fieldset>
+            <button type="submit" class="btn-solid theme-primary">Register with Buku Buku</button>
+        </form>
+    </div>
+</body>
+
+</html>
