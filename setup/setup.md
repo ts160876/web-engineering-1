@@ -96,4 +96,9 @@ Finally restart the Apache Web Server (by stopping it and afterwards starting it
 
 Clone the repository https://github.com/ts160876/web-engineering-1.git into `C:\Apache24\htdocs`.
 
-Afterwards try to open http://localhost/web-engineering-1/setup/test.html as well as http://localhost/web-engineering-1/setup/test.php. If both pages are correctly displayed, you are done.
+Afterwards try to open http://localhost/web-engineering-1/setup/test.html as well as http://localhost/web-engineering-1/setup/test.php. You should see the following pages in **Google Chrome**. Please pay attention that they look like in the screenshots. If they only show the heading, then likely something with your **PHP** installation is wrong.
+
+![test.html](test1.png)
+![test.php](test2.png)
+
+If both pages are correctly displayed, you are done.
